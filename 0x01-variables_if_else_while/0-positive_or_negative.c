@@ -2,9 +2,11 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
-/* betty style doc for function main goes there */
+
 /**
- * This programm will assign a random number each time it is executed
+ *main - Program to assign a random number, whether +ve,-ve or zero
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
