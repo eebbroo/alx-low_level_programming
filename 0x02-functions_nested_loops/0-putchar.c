@@ -1,8 +1,7 @@
-#include "stdio.h"
 #include "main.h"
 
 /**
- * main - Program that prints Putchar to the standardoutput
+ * main - Program that prints _putchar to the standardoutput
  *
  * Return: Always 0 (Success)
  */
@@ -13,8 +12,8 @@ int main(void)
 
 	for (a = 0; a < 9; a++)
 	{
-		putchar(arr[a]);
+		_putchar(arr[a]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
