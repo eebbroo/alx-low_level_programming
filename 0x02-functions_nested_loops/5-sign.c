@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - Program to determine the signs or numbers
+ * main - print_sign - Determines if the input number
+ * greater, equal or less than zero.
  *
  * Return: 1 is greater than zero. 0 is zero and -1 is less than zero.
  */
