@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *Program that checks for alphabetic character
+ *main - Program that checks for alphabetic character
  *
  * Return: 1 for letters. 0 for the rest.
  */
