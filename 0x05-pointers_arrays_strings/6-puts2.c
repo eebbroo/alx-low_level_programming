@@ -16,6 +16,6 @@ void puts2(char *str)
 	for (i = 0; str[i] != '\0'; i += 2)
 	{
 		putchar (str[i]);
-		putchar ('\n');
 	}
+	putchar ('\n');
 }
