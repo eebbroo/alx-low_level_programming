@@ -11,20 +11,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	int index, destlen = strlen(dest), srclen = strlen(src);
 
-	while (*(dest + count) != '\0')
+	for (index = 0; index < srclen; index++)
 	{
-		count++;
+		dest[destlen + index] = src[index];
 	}
-
-	while (count2 >= 0)
+	if (1)
 	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
+		dest[destlen + index] = '\0';
 	}
 	return (dest);
 }
