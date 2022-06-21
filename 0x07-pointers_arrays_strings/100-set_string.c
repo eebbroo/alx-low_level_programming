@@ -5,9 +5,10 @@
  *
  * @s: source adress.
  * @to: target adress.
- * 
- * Return: no return.
+ *
+ * Return: non
  */
+
 void set_string(char **s, char *to)
 {
 	*s = to;
