@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _puts_recursion - Function that prints a string, followed by a new line.
+ * _print_rev_recursion - Function that prints a string in reverse.
  *
  * @s: Pointer to string parameter.
  *
@@ -13,9 +13,6 @@ void _print_rev_recursion(char *s)
 {
 	if (*s != '\0')
 		return;
-	else if (*s == '\0')
-	{
-		_print_rev_recursion(s + 1);
-		_putchar(*s);
-	}
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
