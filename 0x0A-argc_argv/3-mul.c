@@ -18,11 +18,9 @@ int main(int argc, char *argv[])
 	{
 		mult = (atoi(argv[i]) * (atoi(argv[j])));
 		printf("%d\n", mult);
+		return (0);
 	}
-	else if (argc == 1)
-	{
+	else
 		printf("Error\n");
-		return (1);
-	}
-	return (0);
+	return (1);
 }
