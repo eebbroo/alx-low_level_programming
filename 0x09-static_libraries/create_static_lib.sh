@@ -1,5 +1,3 @@
 #!/bin/bash
-
-gcc -l . -c *.c
-ar -rc liballa.a *.o
-gcc main.c liballa.a -o liballa
+gcc -c *.c
+ar rc liball.a *.o
