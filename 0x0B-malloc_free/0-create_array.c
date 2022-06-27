@@ -6,10 +6,10 @@
  *create_array - function that creates an array of chars,
  *and initializes it with a specific char.
  *
- *@size: size or the array.
+ *@size: size of the array.
  *@c: Array of characters
  *
- *Return: Return NULL if size is zero
+ *Return: Return pointer of type char.
  */
 
 char *create_array(unsigned int size, char c)
@@ -32,7 +32,6 @@ char *create_array(unsigned int size, char c)
 			array[i] = c;
 		}
 	}
-	return (create_array);
+	return (array);
 	free(array);
 }
-
