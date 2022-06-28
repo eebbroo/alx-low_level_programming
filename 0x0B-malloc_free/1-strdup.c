@@ -17,13 +17,13 @@ char *_strdup(char *str)
 	char *mem;
 	unsigned int n, j;
 
-	for (n = 0; str[n] != '\0'; n++)
-	{
-		;
-	}
 	if (str == NULL)
 	{
 		return (NULL);
+	}
+	for (n = 0; str[n] != '\0'; n++)
+	{
+		;
 	}
 	mem = (char *)malloc((n + 1) * sizeof(char));
 	if (mem == NULL)
