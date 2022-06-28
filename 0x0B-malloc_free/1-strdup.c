@@ -3,36 +3,35 @@
 #include <stdlib>
 
 /**
- *create_array - function that creates an array of chars,
- *and initializes it with a specific char.
+ *_strdup - A function that returns a pointer to a
+ *newly allocated space in memory, which contains a
+ *copy of the string given as a parameter.
  *
- *@size: size or the array.
- *@c: Array of characters
+ *@str: string argument
  *
- *Return: Return NULL if size is zero
+ *Return: Return a pointer to newly allocated space in memory.
  */
 
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
-	unsigned int i;
-	char *array = malloc(size * sizeof(c));
+	char *mem;
+	unsigned int n, j;
 
-	if (size == 0)
+	for (n = 0; str[n] != '\0'; n++)
+	{
+		;
+	}
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	if (array == NULL)
+	mem = malloc(n * sizeof(char));
+	for (j = 0; j <= n; j++)
 	{
-		return (NULL);
+		mem[j] = str[j];
 	}
-	else
+	if (*mem == *str)
 	{
-		for (i = 0; i < size; i++)
-		{
-			array[i] = c;
-		}
+		return (mem);
 	}
-	return (create_array);
-	free(array);
 }
-
