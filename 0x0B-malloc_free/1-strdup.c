@@ -30,8 +30,5 @@ char *_strdup(char *str)
 	{
 		mem[j] = str[j];
 	}
-	if (*mem == *str)
-	{
-		return (mem);
-	}
+	return (mem);
 }
