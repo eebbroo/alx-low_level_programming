@@ -26,7 +26,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	mem = (char *)malloc((n + 1) * sizeof(char));
-	if(mem == NULL)
+	if (mem == NULL)
 		return (NULL);
 	for (j = 0; j <= n; j++)
 	{
