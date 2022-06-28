@@ -25,10 +25,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	mem = malloc((n+1) * sizeof(char));
+	mem = malloc((n + 1) * sizeof(char));
 	for (j = 0; j <= n; j++)
 	{
 		mem[j] = str[j];
 	}
-	return (mem);
+	if(*mem == *str)
+		return (mem);
 }
