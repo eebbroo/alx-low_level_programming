@@ -15,6 +15,10 @@ char *str_concat(char *s1, char *s2)
 	int i, j, k, l;
 	char *mem;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+        if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		;
@@ -28,8 +32,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
 	for (k = 0; k <= i; k++)
 	{
 		mem[k] = s1[k];
@@ -40,4 +42,18 @@ char *str_concat(char *s1, char *s2)
 	}
 	mem[i + j + 1] = '\0';
 	return (mem);
+}
+int main(void)
+{
+    char *s;
+
+    s = str_concat("Betty ", "MAJAM");
+    if (s == NULL)
+    {
+        printf("failed\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
+    return (0);
 }
