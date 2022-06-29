@@ -7,7 +7,7 @@
  *@width:width array parameter
  *@height:height of array
  *
- * return: return a pointer
+ *Return: return a pointer
  */
 
 int **alloc_grid(int width, int height)
