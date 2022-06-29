@@ -15,13 +15,7 @@ char *str_concat(char *s1, char *s2)
 	int i, j, k, l;
 	char *mem;
 
-	if (s1 == NULL)
-		return (s2);
-	if (s2 == NULL)
-		return (s1);
-	if (s1 == NULL && s2 == NULL)
-		;
-	for (i = 0; s1[i] != '\0'; i++)
+	for(i = 0; s1[i] != '\0'; i++)
 	{
 		;
 	}
@@ -29,6 +23,12 @@ char *str_concat(char *s1, char *s2)
 	{
 		;
 	}
+	if (s1 == NULL)
+		return (s2);
+	if (s2 == NULL)
+		return (s1);
+	if (s1 == NULL && s2 == NULL)
+		;
 	mem = (char *)malloc(sizeof(char) * (i + j + 1));
 	if (mem == NULL)
 	{
