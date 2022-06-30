@@ -28,5 +28,5 @@ int *array_range(int min, int max)
 		mem[i] = min++;
 	}
 
-	return (ptr);
+	return (mem);
 }
