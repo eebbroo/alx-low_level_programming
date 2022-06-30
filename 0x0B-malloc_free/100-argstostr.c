@@ -43,5 +43,5 @@ char *argstostr(int ac, char **av)
 		mem[k] = '\n';
 		k++;
 	}
-	return (str);
+	return (mem);
 }
