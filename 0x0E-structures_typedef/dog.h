@@ -10,11 +10,12 @@
  *
  * Description: struct called "dog" that stores its name, its age
  * and the name of its owner.
- *
- * dog_t - Typedef for struct dog
  */
 
 typedef struct dog dog_t;
+/**
+ * dog_t - Typedef for struct dog
+ */
 
 struct dog
 {
