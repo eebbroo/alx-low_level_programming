@@ -9,32 +9,32 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int i = 0, j = 0, k = 0;
+	int i, j, k;
 	struct dog *_new;
 	char *nam, *own;
 
 	_new = malloc(sizeof(struct dog));
 	if (_new == NULL)
 		return (NULL);
-	while (name[i] != '\0')
-		i++;
-	while (owner[j] != '\0')
-		j++;
-	nam = malloc((sizeof(char) * i) + 1);
+	for (i = 0; name[i] != '\0'; i++)
+		;
+	for (j = 0; owner[j] != '\0'; j++)
+		;
+	nam = malloc(sizeof(char) * i + 1);
 	if (nam == NULL)
-		free(_new);
-	return (NULL);
-	own = malloc((sizeof(char) * j) + 1);
+		return (NULL);
+	own = malloc(sizeof(char) * j + 1);
 	if (own == NULL)
-		free(own);
-	free(nam);
-	return (NULL);
-	for (k = 0; k < i; k++)
+		return (NULL);
+	for (k = 0; k <= i; k++)
 		nam[k] = name[k];
-	for (k = 0; k < j; k++)
+	for (k = 0; k <= j; k++)
 		own[k] = owner[k];
 	_new->name = nam;
 	_new->age = age;
 	_new->owner = own;
+	free(nam);
+	free(own);
 	return (_new);
+	free(_new);
 }
