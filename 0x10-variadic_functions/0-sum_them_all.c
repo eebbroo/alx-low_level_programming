@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <variadic_functions.h>
+#include "variadic_functions.h"
 
 /**
  *sum_them_all - Sums up all interger arguments
@@ -16,7 +16,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(ap, n);
 
-	int i, sum = 0, val;
+	unsigned int i, sum = 0, val;
 
 	if (n == 0)
 		return (0);
@@ -26,6 +26,6 @@ int sum_them_all(const unsigned int n, ...)
 
 		sum += val;
 	}
-	return (sum);
 	va_end(ap);
+	return (sum);
 }
