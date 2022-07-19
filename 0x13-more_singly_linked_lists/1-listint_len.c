@@ -1,11 +1,11 @@
 #include "lists.h"
 
-/***
- *listint_len - Funtion to return the number of nodes
+/**
+ * listint_len - Funtion to return the number of nodes
  *
- *@h: pointer to the list
+ * @h: pointer to the list
  *
- *Return: return the number of elements
+ * Return: return the number of elements
  */
 
 size_t listint_len(const listint_t *h)
