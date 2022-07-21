@@ -1,6 +1,12 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+double pow(double, double);
 int get_endianness(void);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int clear_bit(unsigned long int *n, unsigned int index);
