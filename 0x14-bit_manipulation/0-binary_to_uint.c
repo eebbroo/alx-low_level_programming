@@ -14,7 +14,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int i;
 
-	value = 0;
+	int value = 0;
 	if (b == NULL)
 		return (0);
 	for (i = 0; b[i] != '\0'; i++)
@@ -24,4 +24,21 @@ unsigned int binary_to_uint(const char *b)
 		value = 2 * value + (b[i] - '0');
 	}
 	return (value);
+}
+
+int main(void)
+{
+    unsigned int n;
+
+    n = binary_to_uint("1");
+    printf("%u\n", n);
+    n = binary_to_uint("101");
+    printf("%u\n", n);
+    n = binary_to_uint("1e01");
+    printf("%u\n", n);
+    n = binary_to_uint("1100010");
+    printf("%u\n", n);
+    n = binary_to_uint("0000000000000000000110010010");
+    printf("%u\n", n);
+    return (0);
 }
